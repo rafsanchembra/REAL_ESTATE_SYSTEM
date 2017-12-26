@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\RealEstateManagementSystem.vbproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Bundle.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Bundle.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Bundle.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Bundle.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Bundle.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Bundle.config" />
+  <event action="Analyze" type="Success" name="Bundle.config" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Bundle.config" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\customMessageBox\messageBox.ascx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\customMessageBox\messageBox.ascx" />
+  <event action="Analyze" type="Success" name="messageBox.ascx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\customMessageBox\messageBox.ascx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\HomeMaster.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\HomeMaster.Master" />
+  <event action="Analyze" type="Success" name="HomeMaster.Master" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\HomeMaster.Master" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\LoginMaster.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\LoginMaster.Master" />
+  <event action="Analyze" type="Success" name="LoginMaster.Master" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\LoginMaster.Master" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\WindowMaster.Master" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\WindowMaster.Master" />
+  <event action="Analyze" type="Success" name="WindowMaster.Master" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Content\WindowMaster.Master" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Default.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Default.aspx" />
+  <event action="Analyze" type="Success" name="Default.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Default.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ActivateFreezeUser.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ActivateFreezeUser.aspx" />
+  <event action="Analyze" type="Success" name="ActivateFreezeUser.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ActivateFreezeUser.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ChangeUserName.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ChangeUserName.aspx" />
+  <event action="Analyze" type="Success" name="ChangeUserName.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ChangeUserName.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ChangeUserSignature.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ChangeUserSignature.aspx" />
+  <event action="Analyze" type="Success" name="ChangeUserSignature.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ChangeUserSignature.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\Login.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\Login.aspx" />
+  <event action="Analyze" type="Success" name="Login.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\Login.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ManageUser.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ManageUser.aspx" />
+  <event action="Analyze" type="Success" name="ManageUser.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ManageUser.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\Register.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\Register.aspx" />
+  <event action="Analyze" type="Success" name="Register.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\Register.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ResetPassword.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ResetPassword.aspx" />
+  <event action="Analyze" type="Success" name="ResetPassword.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Account\ResetPassword.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountAdvanceManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountAdvanceManagement.aspx" />
+  <event action="Analyze" type="Success" name="BankAccountAdvanceManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountAdvanceManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountManagement.aspx" />
+  <event action="Analyze" type="Success" name="BankAccountManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="BankAccountManagementWindow.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountOpeningBalanceManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountOpeningBalanceManagement.aspx" />
+  <event action="Analyze" type="Success" name="BankAccountOpeningBalanceManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountOpeningBalanceManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountUpdateStatusManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountUpdateStatusManagement.aspx" />
+  <event action="Analyze" type="Success" name="BankAccountUpdateStatusManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAccountUpdateStatusManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAdvanceManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAdvanceManagement.aspx" />
+  <event action="Analyze" type="Success" name="BankAdvanceManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankAdvanceManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankManagement.aspx" />
+  <event action="Analyze" type="Success" name="BankManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Bank\BankManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\BankServices\BankAccountTransaction.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\BankServices\BankAccountTransaction.aspx" />
+  <event action="Analyze" type="Success" name="BankAccountTransaction.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\BankServices\BankAccountTransaction.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\BankServices\TransferCashBetweenBankAccounts.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\BankServices\TransferCashBetweenBankAccounts.aspx" />
+  <event action="Analyze" type="Success" name="TransferCashBetweenBankAccounts.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\BankServices\TransferCashBetweenBankAccounts.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Default.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Default.aspx" />
+  <event action="Analyze" type="Success" name="Default.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Default.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\Download\DownloadAttachment.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\Download\DownloadAttachment.aspx" />
+  <event action="Analyze" type="Success" name="DownloadAttachment.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\Download\DownloadAttachment.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\Download\DownloadSelectedAttachment.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\Download\DownloadSelectedAttachment.aspx" />
+  <event action="Analyze" type="Success" name="DownloadSelectedAttachment.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\Download\DownloadSelectedAttachment.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\MapLocator.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\MapLocator.aspx" />
+  <event action="Analyze" type="Success" name="MapLocator.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\MapLocator.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\MapLocator_Test.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\MapLocator_Test.aspx" />
+  <event action="Analyze" type="Success" name="MapLocator_Test.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\MapLocator_Test.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\Test.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\Test.aspx" />
+  <event action="Analyze" type="Success" name="Test.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Others\Test.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\Administrator.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\Administrator.aspx" />
+  <event action="Analyze" type="Success" name="Administrator.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\Administrator.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\Bank.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\Bank.aspx" />
+  <event action="Analyze" type="Success" name="Bank.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\Bank.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\bankServices.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\bankServices.aspx" />
+  <event action="Analyze" type="Success" name="bankServices.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\bankServices.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\UserManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\UserManagement.aspx" />
+  <event action="Analyze" type="Success" name="UserManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\Administrator\UserManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\PublicRelation.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\PublicRelation.aspx" />
+  <event action="Analyze" type="Success" name="PublicRelation.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\PublicRelation.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\RealEstate\Building.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\RealEstate\Building.aspx" />
+  <event action="Analyze" type="Success" name="Building.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\RealEstate\Building.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\RealEstate\RealEstate.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\RealEstate\RealEstate.aspx" />
+  <event action="Analyze" type="Success" name="RealEstate.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Pages\RealEstate\RealEstate.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Client\ClientManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Client\ClientManagement.aspx" />
+  <event action="Analyze" type="Success" name="ClientManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Client\ClientManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Contact\ContactManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Contact\ContactManagement.aspx" />
+  <event action="Analyze" type="Success" name="ContactManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Contact\ContactManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Contact\ContactManagementAddWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Contact\ContactManagementAddWindow.aspx" />
+  <event action="Analyze" type="Success" name="ContactManagementAddWindow.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Contact\ContactManagementAddWindow.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Owner\OwnerManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Owner\OwnerManagement.aspx" />
+  <event action="Analyze" type="Success" name="OwnerManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Owner\OwnerManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Supplier\SupplierManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Supplier\SupplierManagement.aspx" />
+  <event action="Analyze" type="Success" name="SupplierManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\PublicRelation\Supplier\SupplierManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Add\BuildingAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Add\BuildingAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="BuildingAttachmentWindow.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Add\BuildingAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Add\BuildingManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Add\BuildingManagement.aspx" />
+  <event action="Analyze" type="Success" name="BuildingManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Add\BuildingManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Add\Flat\BuldingFlatAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Add\Flat\BuldingFlatAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="BuldingFlatAttachmentWindow.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Add\Flat\BuldingFlatAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Update\BuildingList.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Update\BuildingList.aspx" />
+  <event action="Analyze" type="Success" name="BuildingList.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Update\BuildingList.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Update\BuildingUpdateAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Update\BuildingUpdateAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="BuildingUpdateAttachmentWindow.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Update\BuildingUpdateAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Update\BuildingUpdateManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Update\BuildingUpdateManagement.aspx" />
+  <event action="Analyze" type="Success" name="BuildingUpdateManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\BuildingManagement\Update\BuildingUpdateManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FlatManagement\FlatManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FlatManagement\FlatManagement.aspx" />
+  <event action="Analyze" type="Success" name="FlatManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FlatManagement\FlatManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FlatManagement\FlatManagementAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FlatManagement\FlatManagementAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="FlatManagementAttachmentWindow.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FlatManagement\FlatManagementAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FlatManagement\FlatManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FlatManagement\FlatManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="FlatManagementWindow.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FlatManagement\FlatManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\FreeLandManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\FreeLandManagement.aspx" />
+  <event action="Analyze" type="Success" name="FreeLandManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\FreeLandManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\FreeLandManagementAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\FreeLandManagementAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="FreeLandManagementAttachmentWindow.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\FreeLandManagementAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\FreeLandManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\FreeLandManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="FreeLandManagementWindow.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\FreeLandManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\imagedemo.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\imagedemo.aspx" />
+  <event action="Analyze" type="Success" name="imagedemo.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\FreeLandManagement\imagedemo.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\VillaManagement\VillaManagement.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\VillaManagement\VillaManagement.aspx" />
+  <event action="Analyze" type="Success" name="VillaManagement.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\VillaManagement\VillaManagement.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\VillaManagement\VillaManagementAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\VillaManagement\VillaManagementAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="VillaManagementAttachmentWindow.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\VillaManagement\VillaManagementAttachmentWindow.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\VillaManagement\VillaManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\VillaManagement\VillaManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="VillaManagementWindow.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\RealEstate\VillaManagement\VillaManagementWindow.aspx" />
+  <event action="Analyze" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Report\ReportBank.aspx" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Report\ReportBank.aspx" />
+  <event action="Analyze" type="Success" name="ReportBank.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Report\ReportBank.aspx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Web.config" />
+  <event action="Analyze" type="Success" name="Web.config" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Web.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\My Project\Resources.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\packages.config" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.config" />
+  <event action="Analyze" type="Success" name="Web.config" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Web.Debug.config" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Debug.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Release.config" />
+  <event action="Analyze" type="Success" name="Web.Release.config" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.Release.config" />
+  <event action="Analyze" type="Success" name="RealEstateManagementSystem" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\RealEstateManagementSystem.vbproj" />
+  <event action="Analyze" type="Success" name="RealEstateManagementSystem" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem.sln" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\RealEstateManagementSystem.vbproj" />
+  <event action="Upgrade" type="Success" name="Register Directives" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Report\ReportBank.aspx" />
+  <event action="Upgrade" type="Success" name="ReportBank.aspx" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Forms\Report\ReportBank.aspx" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.config" />
+  <event action="Upgrade" type="Success" name="Web.config" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\Web.config" />
+  <event action="Upgrade" type="Success" name="RealEstateManagementSystem" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem\RealEstateManagementSystem.vbproj" />
+  <event action="Upgrade" type="Success" name="RealEstateManagementSystem" path="D:\Workspaces\Codes\REAL_ESTATE_SYSTEM\RealEstateManagementSystem.sln" />
+</log>

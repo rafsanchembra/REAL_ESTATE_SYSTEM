@@ -1,0 +1,36 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(../font/Aaargh-webfont.woff);
+}
+
+.RadImageGallery {
+    background-color: transparent !important;
+}
+
+    .RadImageGallery .rigThumbnailsBox {
+        background-color: transparent !important;
+    }
+
+    .RadImageGallery .rigActiveImage img {
+        padding-left: 0 !important;
+        margin: auto 30% !important;
+        width: 300px !important;
+    }
+
+.RadImageGallery_Default .rigNextButton {
+    background-image: url("ImageGallery/Next.png") !important;
+    background-position: 0 0 !important;
+    width: 64px !important;
+    height: 64px !important;
+}
+
+.RadImageGallery_Default .rigPrevButton {
+    background-image: url("ImageGallery/Previous.png") !important;
+    background-position: 0 0 !important;
+    width: 64px !important;
+    height: 64px !important;
+}
+
+.RadImageGallery .rigThumbnailsList img {
+    padding: 3px;
+}

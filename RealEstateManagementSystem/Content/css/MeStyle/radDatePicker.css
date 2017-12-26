@@ -1,0 +1,9 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(../font/Aaargh-webfont.woff);
+}
+
+.RadPicker_Bootstrap .rcCalPopup, .RadPicker_Bootstrap .rcTimePopup {
+    width: 32px !important ;
+    height: 38px !important ;
+}

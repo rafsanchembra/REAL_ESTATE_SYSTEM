@@ -1,0 +1,67 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(../font/Aaargh-webfont.woff);
+}
+
+.RadWindow {
+    line-height: 100% !important;
+    vertical-align: middle;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.05),0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+    .RadWindow table.rwTable {
+        height: 100% !important;
+    }
+
+    .RadWindow .rwTopLeft, .RadWindow .rwTopRight, .RadWindow .rwFooterLeft, .RadWindow .rwFooterRight, .RadWindow .rwFooterCenter {
+        height: 10px !important;
+    }
+    .RadWindow .rwTitlebar{
+        height: 15px !important;
+    }
+
+    .RadWindow .rwBodyLeft {
+        border-radius: 6px 0 0 6px;
+    }
+
+    .RadWindow .rwBodyRight {
+        border-radius: 0 6px 6px 0;
+    }
+
+.RadWindow_Default {
+    border-radius: 6px !important;
+}
+
+    .RadWindow_Default .rwTopLeft,
+    .RadWindow_Default .rwTopRight,
+    .RadWindow_Default .rwTitlebar,
+    .RadWindow_Default .rwFooterLeft,
+    .RadWindow_Default .rwFooterRight,
+    .RadWindow_Default .rwFooterCenter,
+    .RadWindow_Default .rwTopResize,
+    .RadWindow_Default .rwStatusbar div,
+    .RadWindow_Default .rwStatusbar,
+    .RadWindow_Default .rwPopupButton,
+    .RadWindow_Default .rwPopupButton span,
+    .RadWindow_Default.rwMinimizedWindow .rwCorner {
+        background-image: none !important;
+        display: none !important;
+    }
+
+
+    .RadWindow_Default .rwBodyLeft,
+    .RadWindow_Default .rwBodyRight,
+    .RadWindow_Default .rwStatusbarRow .rwCorner {
+        background-image: none !important;
+    }
+
+    .RadWindow_Default .rwBodyLeft,
+    .RadWindow_Default .rwBodyRight {
+        width: 10px !important;
+        background-color: white !important;
+    }
+
+.TelerikModalOverlay {
+    background-color: rgb(0, 0, 0) !important;
+    opacity: 0.8 !important;
+}

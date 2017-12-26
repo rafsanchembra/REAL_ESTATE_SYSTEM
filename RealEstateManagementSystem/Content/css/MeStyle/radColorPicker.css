@@ -1,0 +1,53 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(../font/Aaargh-webfont.woff);
+}
+
+.RadColorPicker_Default {
+    width: 100% !important;
+}
+
+    .RadColorPicker_Default .rcpHeader {
+        display: none !important;
+    }
+
+    .RadColorPicker_Default .rcpViews,
+    .RadColorPicker_Default .rcpHeader,
+    .RadColorPicker_Default .rcpPageView {
+        background-color: transparent !important;
+    }
+
+    .RadColorPicker_Default .rcpPalette,
+    .RadColorPicker_Default .rcpRoundedRight,
+    .RadColorPicker_Default .rcpRoundedBottomRight,
+    .RadColorPicker_Default .rcpRightShadow,
+    .RadColorPicker_Default .rcpCornerShadow {
+        background-image: none !important;
+    }
+
+.RadColorPicker .rcpPalette {
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-top: 5px !important;
+}
+
+.RadColorPicker_Default .rcpRoundedBottomLeft,
+.RadColorPicker_Default .rcpBottomShadow {
+    background-image: none !important;
+}
+
+.RadColorPicker .rcpWebPalette li,
+.RadColorPicker .rcpRecentColors li {
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
+
+.RadColorPicker .rcpColorBox {
+    height: 30px !important;
+}
+
+.RadColorPicker .rcpSelectedColor {
+    border-color: #83b633 !important;
+    border: 1px solid !important;
+}

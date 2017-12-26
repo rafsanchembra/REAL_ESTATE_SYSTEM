@@ -1,0 +1,27 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(../font/Aaargh-webfont.woff);
+}
+
+.RadTreeView_Black {
+    border: 1px solid #B0B0B0 !important;
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.24) !important;
+}
+
+    .RadTreeView_Black .rtLines .rtTop {
+        background: none !important;
+    }
+
+    .RadTreeView_Black .rtSelected .rtIn {
+        color: #000 !important;
+        border-color: transparent !important;
+        background-color: transparent !important;
+        background-image: none !important;
+    }
+
+    .RadTreeView_Black .rtHover .rtIn {
+        color: #000 !important;
+        border-color: transparent !important;
+        background-color: transparent !important;
+        background-image: none !important;
+    }

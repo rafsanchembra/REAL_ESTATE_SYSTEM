@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="RealEstateManagementSystemDataBase" Class="RealDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=Safdar-PC\SQLSERVER2012;Initial Catalog=RealEstateManagementSystemDataBase;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="RealEstateManagementSystemDataBaseConnection" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.APP_BankAccounts" Member="APP_BankAccounts">
+    <Type Name="APP_BankAccount">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BankID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BankAccountNumber" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="BankAccountArabicName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="BankAccountEnglishName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="BankAccountOpeningBalance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="BankAccountTotalBalance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="BankAccountMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BankAccountStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BankAccountOpeningBalanceMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BankAccountAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BankAccountAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BankAccountUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BankAccountUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BankAccountOpeningBalanceAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BankAccountOpeningBalanceAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BankAccountOpeningBalanceUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BankAccountOpeningBalanceUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="APP_BankAccount_APP_BankAccountTransaction" Member="APP_BankAccountTransactions" ThisKey="ID" OtherKey="TransactionBankAccountID" Type="APP_BankAccountTransaction" />
+      <Association Name="APP_BankAccount_APP_BankTransactionBetweenAccount" Member="APP_BankTransactionBetweenAccounts" ThisKey="ID" OtherKey="TransactionReceiveBankAccountID" Type="APP_BankTransactionBetweenAccount" />
+      <Association Name="APP_BankAccount_APP_BankTransactionBetweenAccount1" Member="APP_BankTransactionBetweenAccounts1" ThisKey="ID" OtherKey="TransactionSenderBankAccountID" Type="APP_BankTransactionBetweenAccount" />
+      <Association Name="APP_Bank_APP_BankAccount" Member="APP_Bank" ThisKey="BankID" OtherKey="ID" Type="APP_Bank" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UsersInRoles" Member="UsersInRoles">
+    <Type Name="UsersInRole">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Role_UsersInRole" Member="Role" ThisKey="RoleId" OtherKey="RoleId" Type="Role" IsForeignKey="true" />
+      <Association Name="User_UsersInRole" Member="User" ThisKey="UserId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_BankAccountTransactions" Member="APP_BankAccountTransactions">
+    <Type Name="APP_BankAccountTransaction">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TransactionBankAccountID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TransactionAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TransactionDocumentType" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TransactionDocumentDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TransactionDocumentNumber" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="TransactionType" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TransactionAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TransactionMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TransactionStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TransactionAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TransactionAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TransactionUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TransactionUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="APP_BankAccount_APP_BankAccountTransaction" Member="APP_BankAccount" ThisKey="TransactionBankAccountID" OtherKey="ID" Type="APP_BankAccount" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_Banks" Member="APP_Banks">
+    <Type Name="APP_Bank">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BankArabicName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="BankEnglishName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="BankSwiftCode" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="BankIBANCode" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="BankLatitudeCoordinates" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="BankLongitudeCoordinates" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="BankURLMap" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="BankWebsite" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="BankOnlineBankingURL" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="BankDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BankAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BankAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BankUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BankUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="APP_Bank_APP_BankAccount" Member="APP_BankAccounts" ThisKey="ID" OtherKey="BankID" Type="APP_BankAccount" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_BankTransactionBetweenAccounts" Member="APP_BankTransactionBetweenAccounts">
+    <Type Name="APP_BankTransactionBetweenAccount">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TransactionSenderBankAccountID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TransactionReceiveBankAccountID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TransactionAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TransactionDocumentType" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TransactionDocumentDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TransactionDocumentNumber" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="TransactionAttachment" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
+      <Column Name="TransactionMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TransactionStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TransactionAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TransactionAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TransactionUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TransactionUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="APP_BankAccount_APP_BankTransactionBetweenAccount" Member="APP_BankAccount" ThisKey="TransactionReceiveBankAccountID" OtherKey="ID" Type="APP_BankAccount" IsForeignKey="true" />
+      <Association Name="APP_BankAccount_APP_BankTransactionBetweenAccount1" Member="APP_BankAccount1" ThisKey="TransactionSenderBankAccountID" OtherKey="ID" Type="APP_BankAccount" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_Clients" Member="APP_Clients">
+    <Type Name="APP_Client">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ClientContactID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ClientStaffName1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ClientStaffName1GSM" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ClientStaffName2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ClientStaffName2GSM" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ClientDocument" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
+      <Column Name="ClientMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ClientAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ClientAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ClientUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ClientUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ClientStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_Contacts" Member="APP_Contacts">
+    <Type Name="APP_Contact">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContactName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactNickName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="ContactIdentityNumber" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ContactIdentityAttachment" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
+      <Column Name="ContactGSM1CountryCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ContactGSM1" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ContactGSM2CountryCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ContactGSM2" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ContactCommercialRegisterNumber" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ContactCommercialRegisterAttachment" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
+      <Column Name="ContactEmail" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactOfficePhone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ContactOfficeFax" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ContactWebsite" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="ContactPOBox" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="ContactPostalCode" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="ContactLatitudeCoordinates" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="ContactLongitudeCoordinates" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="ContactURLMap" Type="System.String" DbType="NVarChar(60)" CanBeNull="true" />
+      <Column Name="ContactMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ContactAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ContactAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ContactUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ContactUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_Countries" Member="APP_Countries">
+    <Type Name="APP_Country">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="NiceName" Type="System.String" DbType="NVarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="ISO" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ISO3" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="NumCode" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="PhoneCode" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Flag" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CurrencyCode" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_FlatAttachments" Member="APP_FlatAttachments">
+    <Type Name="APP_FlatAttachment">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FlatID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FlatAttachmentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FlatAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="APP_Flat_APP_FlatAttachment" Member="APP_Flat" ThisKey="FlatID" OtherKey="ID" Type="APP_Flat" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_Flats" Member="APP_Flats">
+    <Type Name="APP_Flat">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FlatName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FlatOfficialName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FlatCompanyName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FlatRentingPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="FlatProvince" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FlatCity" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FlatVillage" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FlatPlace" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FlatMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FlatRoomNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FlatBathroomNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FlatBathroomType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FlatAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="FlatAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FlatUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="FlatUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="APP_Flat_APP_FlatAttachment" Member="APP_FlatAttachments" ThisKey="ID" OtherKey="FlatID" Type="APP_FlatAttachment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_FreeLandAttachments" Member="APP_FreeLandAttachments">
+    <Type Name="APP_FreeLandAttachment">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FreeLandID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FreeLandAttachmentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FreeLandAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="APP_FreeLand_APP_FreeLandAttachment" Member="APP_FreeLand" ThisKey="FreeLandID" OtherKey="ID" Type="APP_FreeLand" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_FreeLands" Member="APP_FreeLands">
+    <Type Name="APP_FreeLand">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FreeLandName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FreeLandOfficialName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FreeLandCompanyName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="FreeLandRentingPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="FreeLandProvince" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FreeLandCity" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FreeLandVillage" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FreeLandPlace" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FreeLandMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FreeLandAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="FreeLandAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FreeLandUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="FreeLandUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="APP_FreeLand_APP_FreeLandAttachment" Member="APP_FreeLandAttachments" ThisKey="ID" OtherKey="FreeLandID" Type="APP_FreeLandAttachment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingAttachments" Member="APP_MultiFloorBuildingAttachments">
+    <Type Name="APP_MultiFloorBuildingAttachment">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BuildingID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BuildingAttachmentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BuildingAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BuildingAttachmentType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuilding_APP_MultiFloorBuildingAttachment" Member="APP_MultiFloorBuilding" ThisKey="BuildingID" OtherKey="ID" Type="APP_MultiFloorBuilding" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingAttachmentTemps" Member="APP_MultiFloorBuildingAttachmentTemps">
+    <Type Name="APP_MultiFloorBuildingAttachmentTemp">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BuildingAttachmentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BuildingAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BuildingAttachmentType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingFlatAttachments" Member="APP_MultiFloorBuildingFlatAttachments">
+    <Type Name="APP_MultiFloorBuildingFlatAttachment">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BuildingFlatID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BuildingAttachmentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BuildingAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BuildingAttachmentType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuildingFlat_APP_MultiFloorBuildingFlatAttachment" Member="APP_MultiFloorBuildingFlat" ThisKey="BuildingFlatID" OtherKey="ID" Type="APP_MultiFloorBuildingFlat" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingFlatAttachmentTemps" Member="APP_MultiFloorBuildingFlatAttachmentTemps">
+    <Type Name="APP_MultiFloorBuildingFlatAttachmentTemp">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BuildingFlatID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BuildingAttachmentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BuildingAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BuildingAttachmentType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingFlats" Member="APP_MultiFloorBuildingFlats">
+    <Type Name="APP_MultiFloorBuildingFlat">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MultiFloorBuildingID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FlatFloorNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FlatName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FlatNumber" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="FlatDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuildingFlat_APP_MultiFloorBuildingFlatAttachment" Member="APP_MultiFloorBuildingFlatAttachments" ThisKey="ID" OtherKey="BuildingFlatID" Type="APP_MultiFloorBuildingFlatAttachment" />
+      <Association Name="APP_MultiFloorBuilding_APP_MultiFloorBuildingFlat" Member="APP_MultiFloorBuilding" ThisKey="MultiFloorBuildingID" OtherKey="ID" Type="APP_MultiFloorBuilding" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingFlatTemps" Member="APP_MultiFloorBuildingFlatTemps">
+    <Type Name="APP_MultiFloorBuildingFlatTemp">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MultiFloorBuildingID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FlatFloorNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FlatName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FlatNumber" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="FlatDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuildingTemp_APP_MultiFloorBuildingFlatTemp" Member="APP_MultiFloorBuildingTemp" ThisKey="MultiFloorBuildingID" OtherKey="ID" Type="APP_MultiFloorBuildingTemp" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingFloors" Member="APP_MultiFloorBuildingFloors">
+    <Type Name="APP_MultiFloorBuildingFloor">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MultiFloorBuildingID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FloorNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FloorName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuilding_APP_MultiFloorBuildingFloor" Member="APP_MultiFloorBuilding" ThisKey="MultiFloorBuildingID" OtherKey="ID" Type="APP_MultiFloorBuilding" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingFloorTemps" Member="APP_MultiFloorBuildingFloorTemps">
+    <Type Name="APP_MultiFloorBuildingFloorTemp">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MultiFloorBuildingTempID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FloorNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FloorName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuildingTemp_APP_MultiFloorBuildingFloorTemp" Member="APP_MultiFloorBuildingTemp" ThisKey="MultiFloorBuildingTempID" OtherKey="ID" Type="APP_MultiFloorBuildingTemp" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingOfficeAttachments" Member="APP_MultiFloorBuildingOfficeAttachments">
+    <Type Name="APP_MultiFloorBuildingOfficeAttachment">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BuildingOfficeID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BuildingAttachmentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BuildingAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BuildingAttachmentType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuildingOffice_APP_MultiFloorBuildingOfficeAttachment" Member="APP_MultiFloorBuildingOffice" ThisKey="BuildingOfficeID" OtherKey="ID" Type="APP_MultiFloorBuildingOffice" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingOfficeAttachmentTemps" Member="APP_MultiFloorBuildingOfficeAttachmentTemps">
+    <Type Name="APP_MultiFloorBuildingOfficeAttachmentTemp">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BuildingOfficeID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BuildingAttachmentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BuildingAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BuildingAttachmentType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingOffices" Member="APP_MultiFloorBuildingOffices">
+    <Type Name="APP_MultiFloorBuildingOffice">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MultiFloorBuildingID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="OfficeFloorNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="OfficeName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OfficeNumber" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="OfficeDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuildingOffice_APP_MultiFloorBuildingOfficeAttachment" Member="APP_MultiFloorBuildingOfficeAttachments" ThisKey="ID" OtherKey="BuildingOfficeID" Type="APP_MultiFloorBuildingOfficeAttachment" />
+      <Association Name="APP_MultiFloorBuilding_APP_MultiFloorBuildingOffice" Member="APP_MultiFloorBuilding" ThisKey="MultiFloorBuildingID" OtherKey="ID" Type="APP_MultiFloorBuilding" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingOfficeTemps" Member="APP_MultiFloorBuildingOfficeTemps">
+    <Type Name="APP_MultiFloorBuildingOfficeTemp">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MultiFloorBuildingID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="OfficeFloorNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="OfficeName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OfficeNumber" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="OfficeDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuildingTemp_APP_MultiFloorBuildingOfficeTemp" Member="APP_MultiFloorBuildingTemp" ThisKey="MultiFloorBuildingID" OtherKey="ID" Type="APP_MultiFloorBuildingTemp" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildings" Member="APP_MultiFloorBuildings">
+    <Type Name="APP_MultiFloorBuilding">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MFBuildingName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MFBuildingOfficialName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MFBuildingOwnerID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MFBuildingContactName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MFBuildingContactGSMCountryCodeID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MFBuildingContactGSM" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="MFCurrencyTypeCountryCodeID" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="MFBuildingRentingPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MFBuildingAddress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MFBuildingGPS" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MFBuildingMapUrl" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MFBuildingMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MFBuildingFloorCount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MFBuildingShopCount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MFBuildingFlatCount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MFBuildingOfficeCount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MFBuildingAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="MFBuildingAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MFBuildingUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="MFBuildingUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuilding_APP_MultiFloorBuildingAttachment" Member="APP_MultiFloorBuildingAttachments" ThisKey="ID" OtherKey="BuildingID" Type="APP_MultiFloorBuildingAttachment" />
+      <Association Name="APP_MultiFloorBuilding_APP_MultiFloorBuildingFlat" Member="APP_MultiFloorBuildingFlats" ThisKey="ID" OtherKey="MultiFloorBuildingID" Type="APP_MultiFloorBuildingFlat" />
+      <Association Name="APP_MultiFloorBuilding_APP_MultiFloorBuildingFloor" Member="APP_MultiFloorBuildingFloors" ThisKey="ID" OtherKey="MultiFloorBuildingID" Type="APP_MultiFloorBuildingFloor" />
+      <Association Name="APP_MultiFloorBuilding_APP_MultiFloorBuildingOffice" Member="APP_MultiFloorBuildingOffices" ThisKey="ID" OtherKey="MultiFloorBuildingID" Type="APP_MultiFloorBuildingOffice" />
+      <Association Name="APP_MultiFloorBuilding_APP_MultiFloorBuildingShop" Member="APP_MultiFloorBuildingShops" ThisKey="ID" OtherKey="MultiFloorBuildingID" Type="APP_MultiFloorBuildingShop" />
+      <Association Name="APP_Owner_APP_MultiFloorBuilding" Member="APP_Owner" ThisKey="MFBuildingOwnerID" OtherKey="ID" Type="APP_Owner" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingShopAttachments" Member="APP_MultiFloorBuildingShopAttachments">
+    <Type Name="APP_MultiFloorBuildingShopAttachment">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BuildingShopID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BuildingAttachmentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BuildingAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BuildingAttachmentType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuildingShop_APP_MultiFloorBuildingShopAttachment" Member="APP_MultiFloorBuildingShop" ThisKey="BuildingShopID" OtherKey="ID" Type="APP_MultiFloorBuildingShop" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingShopAttachmentTemps" Member="APP_MultiFloorBuildingShopAttachmentTemps">
+    <Type Name="APP_MultiFloorBuildingShopAttachmentTemp">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BuildingShopID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BuildingAttachmentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BuildingAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BuildingAttachmentType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingShops" Member="APP_MultiFloorBuildingShops">
+    <Type Name="APP_MultiFloorBuildingShop">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MultiFloorBuildingID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ShopFloorNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ShopName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ShopNumber" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ShopDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuildingShop_APP_MultiFloorBuildingShopAttachment" Member="APP_MultiFloorBuildingShopAttachments" ThisKey="ID" OtherKey="BuildingShopID" Type="APP_MultiFloorBuildingShopAttachment" />
+      <Association Name="APP_MultiFloorBuilding_APP_MultiFloorBuildingShop" Member="APP_MultiFloorBuilding" ThisKey="MultiFloorBuildingID" OtherKey="ID" Type="APP_MultiFloorBuilding" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingShopTemps" Member="APP_MultiFloorBuildingShopTemps">
+    <Type Name="APP_MultiFloorBuildingShopTemp">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MultiFloorBuildingID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ShopFloorNo" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ShopName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ShopNumber" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ShopDescription" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuildingTemp_APP_MultiFloorBuildingShopTemp" Member="APP_MultiFloorBuildingTemp" ThisKey="MultiFloorBuildingID" OtherKey="ID" Type="APP_MultiFloorBuildingTemp" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_MultiFloorBuildingTemps" Member="APP_MultiFloorBuildingTemps">
+    <Type Name="APP_MultiFloorBuildingTemp">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="MFBuildingName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MFBuildingOfficialName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MFBuildingOwnerID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MFBuildingContactName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MFBuildingContactGSMCountryCodeID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MFBuildingContactGSM" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="MFCurrencyTypeCountryCodeID" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="MFBuildingRentingPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="MFBuildingAddress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MFBuildingGPS" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MFBuildingMapUrl" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MFBuildingMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MFBuildingFloorCount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MFBuildingShopCount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MFBuildingFlatCount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MFBuildingOfficeCount" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="APP_MultiFloorBuildingTemp_APP_MultiFloorBuildingFlatTemp" Member="APP_MultiFloorBuildingFlatTemps" ThisKey="ID" OtherKey="MultiFloorBuildingID" Type="APP_MultiFloorBuildingFlatTemp" />
+      <Association Name="APP_MultiFloorBuildingTemp_APP_MultiFloorBuildingFloorTemp" Member="APP_MultiFloorBuildingFloorTemps" ThisKey="ID" OtherKey="MultiFloorBuildingTempID" Type="APP_MultiFloorBuildingFloorTemp" />
+      <Association Name="APP_MultiFloorBuildingTemp_APP_MultiFloorBuildingOfficeTemp" Member="APP_MultiFloorBuildingOfficeTemps" ThisKey="ID" OtherKey="MultiFloorBuildingID" Type="APP_MultiFloorBuildingOfficeTemp" />
+      <Association Name="APP_MultiFloorBuildingTemp_APP_MultiFloorBuildingShopTemp" Member="APP_MultiFloorBuildingShopTemps" ThisKey="ID" OtherKey="MultiFloorBuildingID" Type="APP_MultiFloorBuildingShopTemp" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_Owners" Member="APP_Owners">
+    <Type Name="APP_Owner">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OwnerContactID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="OwnerstaffName1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OwnerstaffName1GSM" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="OwnerstaffName2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OwnerstaffName2GSM" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="OwnerDocument" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
+      <Column Name="OwnerMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="OwnerAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwnerAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OwnerUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwnerUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ownerstatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="APP_Owner_APP_MultiFloorBuilding" Member="APP_MultiFloorBuildings" ThisKey="ID" OtherKey="MFBuildingOwnerID" Type="APP_MultiFloorBuilding" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_Suppliers" Member="APP_Suppliers">
+    <Type Name="APP_Supplier">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SupplierContactID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="SupplierStaffName1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SupplierStaffName1GSM" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="SupplierStaffName2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SupplierStaffName2GSM" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="SupplierDocument" Type="System.String" DbType="NVarChar(120)" CanBeNull="true" />
+      <Column Name="SupplierMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SupplierAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SupplierAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SupplierUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="SupplierUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SupplierStatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_UserProfiles" Member="APP_UserProfiles">
+    <Type Name="APP_UserProfile">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserSignature" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserTreasurerSalesAccount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UserAccountantSalesAccount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UserTreasurerExpensesAccount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UserAccountantExpensesAccount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="UserContactID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserCurrentBranchID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_VillaAttachments" Member="APP_VillaAttachments">
+    <Type Name="APP_VillaAttachment">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VillaID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="VillaAttachmentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VillaAttachment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="APP_Villa_APP_VillaAttachment" Member="APP_Villa" ThisKey="VillaID" OtherKey="ID" Type="APP_Villa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.APP_Villas" Member="APP_Villas">
+    <Type Name="APP_Villa">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VillaName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="VillaOfficialName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="VillaCompanyName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="VillaRentingPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="VillaProvince" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="VillaCity" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="VillaVillage" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="VillaPlace" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VillaMemo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="VillaRoomNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="VillaBathroomNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="VillaFloorNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="VillaBathroomType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VillaAddedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="VillaAddedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VillaUpdatedBy" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="VillaUpdatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="APP_Villa_APP_VillaAttachment" Member="APP_VillaAttachments" ThisKey="ID" OtherKey="VillaID" Type="APP_VillaAttachment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Profiles" Member="Profiles">
+    <Type Name="Profile">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PropertyNames" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyValueStrings" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyValueBinary" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="LastUpdatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="User_Profile" Member="User" ThisKey="UserId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Roles" Member="Roles">
+    <Type Name="Role">
+      <Column Name="RoleId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Association Name="Role_UsersInRole" Member="UsersInRoles" ThisKey="RoleId" OtherKey="RoleId" Type="UsersInRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SystemDetails" Member="SystemDetails">
+    <Type Name="SystemDetail">
+      <Column Name="ApplicationID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SystemTitle" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="SystemUserLimit" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SystemMailID" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="SystemMailPassword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AllowSystemMail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SystemMailSender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SystemSMSAPI" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="SystemSMSUser" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="SystemSMSPassword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AllowSystemSMS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IsAnonymous" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="User_UsersInRole" Member="UsersInRoles" ThisKey="UserId" OtherKey="UserId" Type="UsersInRole" />
+      <Association Name="User_Profile" Member="Profile" ThisKey="UserId" OtherKey="UserId" Type="Profile" Cardinality="One" />
+    </Type>
+  </Table>
+  <Function Name="dbo.PROC_ClearAllData" Method="PROC_ClearAllData">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PROC_GetApplicationID" Method="PROC_GetApplicationID">
+    <Parameter Name="ApplicationName" Parameter="applicationName" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="ApplicationID" Parameter="applicationID" Type="System.Guid" DbType="UniqueIdentifier" Direction="InOut" />
+    <ElementType Name="PROC_GetApplicationIDResult">
+      <Column Name="" Member="Column1" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.PROC_APP_MultiFloorBuildingFlatCopyFromTemp" Method="PROC_APP_MultiFloorBuildingFlatCopyFromTemp">
+    <Parameter Name="FlatTempID" Parameter="flatTempID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="BuildingID" Parameter="buildingID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="FlatID" Parameter="flatID" Type="System.Int64" DbType="BigInt" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PROC_APP_MultiFloorBuildingOfficeCopyFromTemp" Method="PROC_APP_MultiFloorBuildingOfficeCopyFromTemp">
+    <Parameter Name="OfficeTempID" Parameter="officeTempID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="BuildingID" Parameter="buildingID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="OfficeID" Parameter="officeID" Type="System.Int64" DbType="BigInt" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PROC_APP_MultiFloorBuildingShopCopyFromTemp" Method="PROC_APP_MultiFloorBuildingShopCopyFromTemp">
+    <Parameter Name="ShopTempID" Parameter="shopTempID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="BuildingID" Parameter="buildingID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="ShopID" Parameter="shopID" Type="System.Int64" DbType="BigInt" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PROC_APP_MultiFloorBuildingCopyFromTemp" Method="PROC_APP_MultiFloorBuildingCopyFromTemp">
+    <Parameter Name="BuildingTempID" Parameter="buildingTempID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="BuildingID" Parameter="buildingID" Type="System.Int64" DbType="BigInt" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

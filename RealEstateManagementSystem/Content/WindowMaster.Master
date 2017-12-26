@@ -1,0 +1,95 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="WindowMaster.Master.vb" Inherits="RealEstateManagementSystem.WindowPage" %>
+
+<%@ Register Src="~/Content/customMessageBox/messageBox.ascx" TagPrefix="msg" TagName="PopMsg" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <title>Real EstateManagement System</title>
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <link runat="server" href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/MeStyle/radAjax.css" rel="stylesheet" />
+    <link href="css/MeStyle/radInput.css" rel="stylesheet" />
+    <link href="css/MeStyle/radCalendar.css" rel="stylesheet" />
+    <link href="css/MeStyle/radMenu.css" rel="stylesheet" />
+    <link href="css/MeStyle/radButton-Bootstrap.css" rel="stylesheet" />
+    <link href="css/MeStyle/radComboBox.css" rel="stylesheet" />
+    <link href="css/MeStyle/radGrid.css" rel="stylesheet" />
+    <link href="css/MeStyle/radUpload.css" rel="stylesheet" />
+    <link href="css/MeStyle/radDatePicker.css" rel="stylesheet" />
+    <link href="css/MeStyle/radTabStrip-window.css" rel="stylesheet" />
+
+    <script src="js/validation.js" type="text/javascript"></script>
+
+    <script>
+        $(function () {
+            $('.link[title]').tooltip();
+        });
+    </script>
+        
+
+    <script src="js/jquery.min.js" ></script>
+    <asp:ContentPlaceHolder ID="scriptPlaceHolder" runat="server" />
+</head>
+<body>
+    <form id="masterPageForm" runat="server">
+        <telerik:RadScriptManager ID="RadScriptManager" runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+                <%--Framework scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="jquery.ui.combined" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site scripts--%>
+            </Scripts>
+        </telerik:RadScriptManager>
+
+        <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
+            <script type="text/javascript">
+                function RequestStart(sender, args) {
+                    if (document.documentElement.scrollHeight > document.documentElement.clientHeight) {
+                        $get("<%= RadAjaxLoadingPanel.ClientID %>").style.height = document.documentElement.scrollHeight + "px";
+                    }
+                }
+            </script>
+        </telerik:RadCodeBlock>
+        <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel" runat="server" Transparency="20" IsSticky="true" Skin="MetroTouch" CssClass="ajaxLoadingPanel" />
+        <telerik:RadAjaxPanel ID="RadAjaxPanel" runat="server" LoadingPanelID="RadAjaxLoadingPanel" HorizontalAlign="Center" Height="100%">
+            <div class="container_window">
+                <div class="wrapper">
+                    <div class="body-window">
+                        <div class="content">
+                            <div class="content-body">                                
+                                <div class="sg-main-window">                                    
+                                    <div class="sg-block-window clearfix">
+                                        <div class="sg-blockcontent-window">
+                                            <asp:ContentPlaceHolder ID="contentPlaceHolder" runat="server" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </telerik:RadAjaxPanel>
+    </form>
+</body>
+</html>
+

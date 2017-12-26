@@ -1,0 +1,97 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(../font/Aaargh-webfont.woff);
+}
+
+.RadComboBox {
+    font: normal 16px Verdana !important;
+}
+
+    .RadComboBox .rcbInput {
+        padding: 5px !important;
+        /*height: 35px !important;*/
+    }
+
+    .RadComboBox table {
+        background-color: #FFF !important;
+        border-radius: 4px !important;
+        height: 40px !important;
+    }
+
+        .RadComboBox table td.rcbInputCell {
+            padding: 0 !important;
+        }
+
+.RadComboBox_Default {
+    font: 16px Verdana !important;
+    height: 40px !important;
+}
+
+    .RadComboBox_Default .rcbInputCell, .RadComboBox_Default .rcbArrowCell {
+        background-image: none !important;
+        height: 32px !important;
+        border: 1px solid #CDCDCD !important;
+    }
+
+    .RadComboBox_Default .rcbEmptyMessage {
+        color: #767676 !important;
+        font-family: "Proxima Nova Regular" !important;
+        font-size: 14px !important;
+        font-style: italic !important;
+    }
+
+    .RadComboBox_Default .rcbInput {
+        color: black !important;
+        font-family: "Proxima Nova Regular" !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+
+    .RadComboBox_Default .rcbFocused .rcbReadOnly .rcbInput {
+        font-family: "Proxima Nova Regular" !important;
+        font-size: 16px !important;
+    }
+
+    .RadComboBox_Default .rcbArrowCell a {
+        width: 28px !important;
+        height: 28px !important;
+        background-image: url('ComboBox/combobox_open.png') !important;
+    }
+
+    .RadComboBox_Default .rcbDisabled .rcbInputCellLeft {
+        background-color: #CDCDCD !important;
+    }
+
+    .RadComboBox_Default .rcbDisabled .rcbArrowCellRight {
+        background-color: #CDCDCD !important;
+    }
+
+.RadComboBoxDropDown_Default {
+    font-family: "Proxima Nova Regular" !important;
+    font-size: 16px !important;
+    line-height: 25px !important;
+}
+
+.multipleRowsColumns .rcbItem,
+.multipleRowsColumns .rcbHovered {
+    float: left;
+    width: 48%;
+}
+
+.RadComboBoxDropDown .rcbHeader {
+    height: 30px;
+}
+
+.RadComboBoxDropDown .rcbItem,
+.RadComboBoxDropDown .rcbHovered {
+    margin: 0px !important;
+    padding: 6px 4px !important;
+}
+
+.RadComboBoxDropDown .rcbHovered {
+    background-color : #c4ced2   !important ;
+}
+.RadComboBoxDropDown .rcbScroll {
+    position: relative;
+    overflow: hidden !important ;
+}

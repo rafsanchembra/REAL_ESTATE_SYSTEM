@@ -1,0 +1,83 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(../font/Aaargh-webfont.woff);
+}
+
+.RadMenu {
+    z-index: 100 !important;
+    width: 100%;
+}
+
+    .RadMenu ul.rmActive, .RadMenu ul.rmRootGroup {
+        border: none;
+        width: 100%;
+    }
+
+.RadMenu_Default {
+    position: relative !important;
+    line-height: 40px !important;
+    vertical-align: middle !important;
+    background-color: #C8C8C8 !important;
+}
+
+    .RadMenu_Default .rmRootGroup {
+        border: none !important;
+        background-color: #C8C8C8 !important;
+    }
+
+    .RadMenu_Default,
+    .RadMenu_Default .rmRootGroup,
+    .RadMenu_Default a.rmLink,
+    a.rmLink:hover,
+    rmItem,
+    rmRootGroup,
+    .RadMenu_Default a.rmLink:hover {
+        font-family: "Proxima Nova Regular" !important;
+        text-transform: uppercase;
+    }
+
+        .RadMenu_Default .rmRootGroup,
+        .RadMenu_Default a.rmLink,
+        .RadMenu_Default .rmGroup .rmText,
+        .RadMenu_Default .rmVertical .rmText,
+        .RadMenu_Default .rmLeftArrow,
+        .RadMenu_Default .rmRightArrow,
+        .RadMenu_Default .rmTopArrow,
+        .RadMenu_Default .rmBottomArrow {
+            background-image: none !important;
+        }
+
+        .RadMenu_Default .rmGroup a.rmExpanded {
+            color: #ff830d !important;
+        }
+
+        .RadMenu_Default a.rmLink {
+            line-height: 40px !important;
+            vertical-align: middle !important;
+            background-color: transparent !important;
+            font-size: 16px !important;
+        }
+
+            .RadMenu_Default a.rmLink:hover {
+                background-color: transparent !important;
+                color: #83b633 !important;
+                cursor: default;
+                transition: box-shadow .25s;
+                box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+
+            .RadMenu_Default a.rmLink .rmRootLink .rmExpanded {
+                background-color: transparent !important;
+            }
+
+        .RadMenu_Default .rmVertical .rmSlide, .RadMenu_Default .rmSlide .rmSlide, .RadMenu_Default_Context .rmGroup .rmSlide {
+            margin: 0 !important;
+        }
+
+        .RadMenu_Default .rmSlide {
+            margin: 0 !important;
+        }
+
+.rmSized ul.rmRootGroup {
+    margin-left: 5% !important;
+}

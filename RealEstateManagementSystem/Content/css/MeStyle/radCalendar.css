@@ -1,0 +1,179 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(../font/Aaargh-webfont.woff);
+}
+
+table.RadCalendar_Default {
+    width: 320px !important;
+}
+
+.RadCalendarPopupShadows {
+    padding: 0 !important;
+}
+
+    .RadCalendarPopupShadows > .rcShadTR {
+        width: 0px !important;
+        background-image: none !important;
+    }
+
+    .RadCalendarPopupShadows > .rcShadBL, .RadCalendarPopupShadows > .rcShadBR {
+        height: 0px !important;
+        background-image: none !important;
+    }
+
+.RadCalendar_Default .rcTitlebar {
+    background: none !important;
+    background-color: #b5b5b5 !important;
+}
+
+    .RadCalendar_Default .rcTitlebar table {
+        height: 42px !important;
+    }
+
+    .RadCalendar_Default .rcTitlebar td {
+        font-family: "Proxima Nova Regular" !important;
+        font-size: 16px;
+    }
+
+.RadCalendar .rcMainTable {
+    height: 100% !important;
+}
+
+.RadCalendar .rcRow td {
+    text-align: center !important;
+    border: none !important;
+}
+
+.RadCalendar_Default .rcRow .rcSelected {
+    background: none !important;
+    background-color: #7FB52A !important;
+    color: black !important;
+    width: 42px !important;
+    height: 42px !important;
+}
+
+    .RadCalendar_Default .rcRow .rcSelected:hover {
+        cursor: default !important;
+    }
+
+.RadCalendar .rcMain .rcRow a,
+.RadCalendar .rcMain .rcRow span {
+    font-family: "Proxima Nova Regular" !important;
+    font-size: 16px;
+    padding: 1px 5px 1px 0px !important;
+}
+
+.RadCalendar_Default .rcMain .rcOtherMonth a,
+.RadCalendar_Default .rcMain .rcOutOfRange span {
+    color: #cecece !important;
+}
+
+.RadCalendar_Default .rcWeek th {
+    font-family: "Proxima Nova Regular" !important;
+    font-size: 16px;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+table.RadCalendarMonthView td {
+    padding: 0 !important;
+}
+
+.RadCalendarMonthView_Default .rcSelected a {
+    background: none !important;
+    background-color: #6ad1ff !important;
+    color: black !important;
+    border-width: 0 !important;
+}
+
+table.RadCalendarMonthView_Default {
+    font-family: "Proxima Nova Regular" !important;
+    font-size: 16px !important;
+}
+
+.RadCalendarMonthView_Default input {
+    font-family: "Proxima Nova Regular" !important;
+    font-size: 16px !important;
+}
+
+table.RadCalendarTimeView_Default {
+    font-family: "Proxima Nova Regular" !important;
+    font-size: 14px !important;
+    width: 250px !important;
+}
+
+.RadCalendar_Default .rcMainTable {
+    line-height: 42px !important;
+}
+
+.RadCalendar_Default .rcTitlebar .rcFastPrev {
+    background-position: -11px -911px !important;
+}
+
+.RadCalendar_Default .rcTitlebar .rcPrev {
+    background-position: -11px -111px !important;
+}
+
+.RadCalendar_Default .rcTitlebar .rcNext {
+    background-position: -11px -161px !important;
+}
+
+.RadCalendar_Default .rcTitlebar .rcFastNext {
+    background-position: -11px -961px !important;
+}
+
+    .RadCalendar_Default .rcTitlebar .rcPrev:hover,
+    .RadCalendar_Default .rcTitlebar .rcNext:hover,
+    .RadCalendar_Default .rcTitlebar .rcFastPrev:hover,
+    .RadCalendar_Default .rcTitlebar .rcFastNext:hover {
+        border-color: #25a0da !important;
+    }
+
+.RadCalendar_Default .rcTitlebar .rcFastPrev:hover {
+    background-position: -61px -911px !important;
+}
+
+.RadCalendar_Default .rcTitlebar .rcPrev:hover {
+    background-position: -61px -111px !important;
+}
+
+.RadCalendar_Default .rcTitlebar .rcNext:hover {
+    background-position: -61px -161px !important;
+}
+
+.RadCalendar_Default .rcTitlebar .rcFastNext:hover {
+    background-position: -61px -961px;
+}
+
+.RadCalendar_Default .rcTitlebar .rcFastNext:hover {
+    background-position: -61px -961px !important;
+}
+
+.RadCalendar_Default .rcMain .rcRow a, 
+.RadCalendar_Default .rcMain .rcRow span {
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    border-radius: 30px !important;
+    width: 42px !important;
+    height: 42px !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.RadCalendar_Default .rcTitlebar .rcPrev,
+.RadCalendar_Default .rcTitlebar .rcNext,
+.RadCalendar_Default .rcTitlebar .rcFastPrev,
+.RadCalendar_Default .rcTitlebar .rcFastNext {
+    width: 28px !important;
+    height: 28px !important;
+    border: 2px solid transparent;
+    margin: 1px 2px 0px;
+    color: #25A0DA;
+    border-radius: 16px;
+    background-image: url("Calender/ActionsSprite.png") !important;
+}
+
+.RadCalendar_Default .rcMain .rcOutOfRange span {
+    color: #d5d5d5 !important;
+    text-decoration: line-through !important;
+}

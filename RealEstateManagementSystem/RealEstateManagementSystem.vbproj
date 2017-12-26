@@ -1,0 +1,1033 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{D6DECFC0-3360-4156-A933-34282CE185AB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RealEstateManagementSystem</RootNamespace>
+    <AssemblyName>RealEstateManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>RealEstateManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>RealEstateManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\Others\Libraries\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.2.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.Spreadsheet, Version=2017.1.215.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.1.228.45\AdditionalLibraries\Bin45\Telerik.Web.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2017.1.228.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.1.228.45\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2017.1.228.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.1.228.45\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.1.228.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.1.228.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Fixed.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.1.228.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow.FormatProviders.Pdf, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.1.228.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Flow.FormatProviders.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.1.228.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.1.228.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.1.228.45\AdditionalLibraries\Bin45\Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2017.1.213.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCAJAX\2017.1.228.45\AdditionalLibraries\Bin45\Telerik.Windows.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting, Version=11.0.17.406, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.Html5.WebForms, Version=11.0.17.406, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms, Version=11.0.17.406, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RadCaptcha\0.wav" />
+    <Content Include="App_Data\RadCaptcha\1.wav" />
+    <Content Include="App_Data\RadCaptcha\2.wav" />
+    <Content Include="App_Data\RadCaptcha\3.wav" />
+    <Content Include="App_Data\RadCaptcha\4.wav" />
+    <Content Include="App_Data\RadCaptcha\5.wav" />
+    <Content Include="App_Data\RadCaptcha\6.wav" />
+    <Content Include="App_Data\RadCaptcha\7.wav" />
+    <Content Include="App_Data\RadCaptcha\8.wav" />
+    <Content Include="App_Data\RadCaptcha\9.wav" />
+    <Content Include="App_Data\RadCaptcha\A.wav" />
+    <Content Include="App_Data\RadCaptcha\B.wav" />
+    <Content Include="App_Data\RadCaptcha\C.wav" />
+    <Content Include="App_Data\RadCaptcha\D.wav" />
+    <Content Include="App_Data\RadCaptcha\E.wav" />
+    <Content Include="App_Data\RadCaptcha\F.wav" />
+    <Content Include="App_Data\RadCaptcha\G.wav" />
+    <Content Include="App_Data\RadCaptcha\H.wav" />
+    <Content Include="App_Data\RadCaptcha\I.wav" />
+    <Content Include="App_Data\RadCaptcha\J.wav" />
+    <Content Include="App_Data\RadCaptcha\K.wav" />
+    <Content Include="App_Data\RadCaptcha\L.wav" />
+    <Content Include="App_Data\RadCaptcha\M.wav" />
+    <Content Include="App_Data\RadCaptcha\N.wav" />
+    <Content Include="App_Data\RadCaptcha\O.wav" />
+    <Content Include="App_Data\RadCaptcha\P.wav" />
+    <Content Include="App_Data\RadCaptcha\Q.wav" />
+    <Content Include="App_Data\RadCaptcha\R.wav" />
+    <Content Include="App_Data\RadCaptcha\S.wav" />
+    <Content Include="App_Data\RadCaptcha\T.wav" />
+    <Content Include="App_Data\RadCaptcha\U.wav" />
+    <Content Include="App_Data\RadCaptcha\V.wav" />
+    <Content Include="App_Data\RadCaptcha\W.wav" />
+    <Content Include="App_Data\RadCaptcha\X.wav" />
+    <Content Include="App_Data\RadCaptcha\Y.wav" />
+    <Content Include="App_Data\RadCaptcha\Z.wav" />
+    <Content Include="Attachments\Building\3\3-1.jpg" />
+    <Content Include="Attachments\Building\Flat\3\3-1.jpg" />
+    <Content Include="Attachments\Building\Flat\3\3-2.jpg" />
+    <Content Include="Attachments\Building\Flat\4\4-1.jpg" />
+    <Content Include="Attachments\Building\Flat\4\4-2.jpg" />
+    <Content Include="Attachments\Building\Flat\4\4-3.jpg" />
+    <Content Include="Attachments\Building\Flat\4\4-4.jpg" />
+    <Content Include="Attachments\Building\Flat\6\6-1.jpg" />
+    <Content Include="Attachments\Building\Flat\6\6-2.jpg" />
+    <Content Include="Attachments\Building\Flat\6\6-3.jpg" />
+    <Content Include="Attachments\Building\Flat\6\6-4.jpg" />
+    <Content Include="Attachments\Building\Floor\11\11-1.jpg" />
+    <Content Include="Attachments\Building\Floor\11\11-2.jpg" />
+    <Content Include="Attachments\Building\Floor\11\11-3.png" />
+    <Content Include="Attachments\Building\Shop\14\14-1.jpeg" />
+    <Content Include="Attachments\Building\Shop\14\14-2.jpg" />
+    <Content Include="Attachments\Freeland\1014005.jpg" />
+    <Content Include="Attachments\Freeland\102013_man_of_steel_movie-wide.jpg" />
+    <Content Include="Attachments\Freeland\10638bce65b25fcae81acc5b1176fe301b.jpg.jpeg" />
+    <Content Include="Attachments\Freeland\19\19-1.jpeg" />
+    <Content Include="Attachments\Freeland\19\19-2.jpg" />
+    <Content Include="Attachments\Freeland\19\19-3.jpg" />
+    <Content Include="Attachments\Freeland\9.jpg" />
+    <Content Include="Content\css\images\add-user.png" />
+    <Content Include="Content\css\images\admin.png" />
+    <Content Include="Content\css\images\balcony.png" />
+    <Content Include="Content\css\images\bathroom.png" />
+    <Content Include="Content\css\images\building.png" />
+    <Content Include="Content\css\images\client.png" />
+    <Content Include="Content\css\images\Close_Button.png" />
+    <Content Include="Content\css\images\contact.png" />
+    <Content Include="Content\css\images\default_profile.jpg" />
+    <Content Include="Content\css\images\Bank.png" />
+    <Content Include="Content\css\images\drag.png" />
+    <Content Include="Content\css\images\flat.png" />
+    <Content Include="Content\css\images\freeland.png" />
+    <Content Include="Content\css\images\fridge.png" />
+    <Content Include="Content\css\images\Header_Logo.png" />
+    <Content Include="Content\css\images\owner.png" />
+    <Content Include="Content\css\images\money-bag.png" />
+    <Content Include="Content\css\images\room.png" />
+    <Content Include="Content\css\images\settings.png" />
+    <Content Include="Content\css\images\sofa.png" />
+    <Content Include="Content\css\images\supplier.png" />
+    <Content Include="Content\css\images\user.png" />
+    <Content Include="Content\css\images\RealEstate.png" />
+    <Content Include="Content\css\images\PublicRelation.png" />
+    <Content Include="Content\css\images\requiredfield.png" />
+    <Content Include="Content\css\images\requiredfield1.png" />
+    <Content Include="Content\css\images\villa.png" />
+    <Content Include="Content\css\MeStyle\Grid\delete.png" />
+    <Content Include="Content\css\MeStyle\Grid\download.png" />
+    <Content Include="Content\css\MeStyle\Grid\edit.png" />
+    <Content Include="Content\css\MeStyle\Grid\eye.png" />
+    <Content Include="Content\css\MeStyle\Grid\next.png" />
+    <Content Include="Content\css\MeStyle\Grid\photo-1.png" />
+    <Content Include="Content\css\MeStyle\Grid\photo-color.png" />
+    <Content Include="Content\css\MeStyle\Grid\photo.png" />
+    <Content Include="Content\css\MeStyle\Grid\view-1.png" />
+    <Content Include="Content\css\MeStyle\Grid\view.png" />
+    <Content Include="Content\css\MeStyle\images\bg.jpg" />
+    <Content Include="Content\css\MeStyle\images\requiredfield.png" />
+    <Content Include="Content\css\MeStyle\images\requiredfield1.png" />
+    <Content Include="Content\css\MeStyle\images\user.png" />
+    <Content Include="Content\css\MeStyle\Ajax\loadingArrow.gif" />
+    <Content Include="Content\css\MeStyle\Ajax\loadingFlag.GIF" />
+    <Content Include="Content\css\MeStyle\Ajax\loadingGreen.GIF" />
+    <Content Include="Content\css\MeStyle\Ajax\loadingHome.GIF" />
+    <Content Include="Content\css\MeStyle\Ajax\loadingHorizontal.GIF" />
+    <Content Include="Content\css\MeStyle\Ajax\loadingRed.gif" />
+    <Content Include="Content\css\MeStyle\Button\CheckBox.png" />
+    <Content Include="Content\css\MeStyle\Button\CheckBoxTick.png" />
+    <Content Include="Content\css\MeStyle\Button\Checked.png" />
+    <Content Include="Content\css\MeStyle\Button\Delete.png" />
+    <Content Include="Content\css\MeStyle\Button\Radio.png" />
+    <Content Include="Content\css\MeStyle\Button\RadioSelected.png" />
+    <Content Include="Content\css\MeStyle\Button\Upload.png" />
+    <Content Include="Content\css\MeStyle\Calender\ActionsSprite.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\Black.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\Blue.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\Brown-Beige.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\combobox_close.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\combobox_open.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\Gray.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\Green.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\Other.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\Red.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\Silver.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\White.png" />
+    <Content Include="Content\css\MeStyle\ComboBox\Yellow-Gold.png" />
+    <Content Include="Content\css\MeStyle\Grid\Add.png" />
+    <Content Include="Content\css\MeStyle\Grid\Approve.png" />
+    <Content Include="Content\css\MeStyle\Grid\Caution.png" />
+    <Content Include="Content\css\MeStyle\Grid\CheckBox.png" />
+    <Content Include="Content\css\MeStyle\Grid\CheckBoxTick.png" />
+    <Content Include="Content\css\MeStyle\Grid\Close.png" />
+    <Content Include="Content\css\MeStyle\Grid\Collapse.png" />
+    <Content Include="Content\css\MeStyle\Grid\Denied.png" />
+    <Content Include="Content\css\MeStyle\Grid\Expand.png" />
+    <Content Include="Content\css\MeStyle\Grid\Invoices.png" />
+    <Content Include="Content\css\MeStyle\Grid\Open.png" />
+    <Content Include="Content\css\MeStyle\Grid\Pay.png" />
+    <Content Include="Content\css\MeStyle\Grid\Photos.png" />
+    <Content Include="Content\css\MeStyle\Grid\Print.png" />
+    <Content Include="Content\css\MeStyle\ImageGallery\Next.png" />
+    <Content Include="Content\css\MeStyle\ImageGallery\Previous.png" />
+    <Content Include="Content\css\MeStyle\menu.css" />
+    <Content Include="Content\css\MeStyle\Menu\expand_arrow_down.png" />
+    <Content Include="Content\css\MeStyle\Menu\expand_arrow_down_256x256.png" />
+    <Content Include="Content\css\MeStyle\Menu\expand_arrow_left.png" />
+    <Content Include="Content\css\MeStyle\Menu\expand_arrow_left_256x256.png" />
+    <Content Include="Content\css\MeStyle\Menu\expand_arrow_right.png" />
+    <Content Include="Content\css\MeStyle\Menu\expand_arrow_right_256x256.png" />
+    <Content Include="Content\css\MeStyle\Menu\expand_arrow_top.png" />
+    <Content Include="Content\css\MeStyle\Menu\expand_arrow_top_256x256.png" />
+    <Content Include="Content\css\MeStyle\radAjax.css" />
+    <Content Include="Content\css\MeStyle\radButton-Bootstrap.css" />
+    <Content Include="Content\css\MeStyle\radButton.css" />
+    <Content Include="Content\css\MeStyle\radCalendar.css" />
+    <Content Include="Content\css\MeStyle\radColorPicker.css" />
+    <Content Include="Content\css\MeStyle\radComboBox.css" />
+    <Content Include="Content\css\MeStyle\radGrid.css" />
+    <Content Include="Content\css\MeStyle\radImageGallery.css" />
+    <Content Include="Content\css\MeStyle\radInput.css" />
+    <Content Include="Content\css\MeStyle\radListBox.css" />
+    <Content Include="Content\css\MeStyle\radMenu.css" />
+    <Content Include="Content\css\MeStyle\radTabStrip-window.css" />
+    <Content Include="Content\css\MeStyle\radTabStrip.css" />
+    <Content Include="Content\css\MeStyle\radTile.css" />
+    <Content Include="Content\css\MeStyle\radTreeView.css" />
+    <Content Include="Content\css\MeStyle\radUpload.css" />
+    <Content Include="Content\css\MeStyle\radWindow.css" />
+    <Content Include="Content\css\MeStyle\radDatePicker.css" />
+    <Content Include="Content\css\MeStyle\radWizard.css" />
+    <Content Include="Content\css\MeStyle\Wizard\radWizardArrow.png" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\customMessageBox\messageBox.ascx" />
+    <Content Include="Content\customMessageBox\messageBoxImages\error.png" />
+    <Content Include="Content\customMessageBox\messageBoxImages\exc.png" />
+    <Content Include="Content\customMessageBox\messageBoxImages\info.png" />
+    <Content Include="Content\customMessageBox\messageBoxImages\ques.png" />
+    <Content Include="Content\customMessageBox\messageBoxImages\success.png" />
+    <Content Include="Content\Images\Kuwait.png" />
+    <Content Include="Content\Images\Oman.png" />
+    <Content Include="Content\Images\Qatar.png" />
+    <Content Include="Content\Images\Saudi.png" />
+    <Content Include="Content\Images\UAE.png" />
+    <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\menu.js" />
+    <Content Include="Content\js\validation.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Forms\Account\ActivateFreezeUser.aspx" />
+    <Content Include="Forms\Account\ChangeUserName.aspx" />
+    <Content Include="Forms\Account\ChangeUserSignature.aspx" />
+    <Content Include="Forms\Account\Login.aspx" />
+    <Content Include="Forms\Account\ManageUser.aspx" />
+    <Content Include="Forms\Account\ResetPassword.aspx" />
+    <Content Include="Forms\BankServices\BankAccountTransaction.aspx" />
+    <Content Include="Forms\BankServices\TransferCashBetweenBankAccounts.aspx" />
+    <Content Include="Forms\Bank\BankAccountAdvanceManagement.aspx" />
+    <Content Include="Forms\Bank\BankAccountManagement.aspx" />
+    <Content Include="Forms\Bank\BankAccountManagementWindow.aspx" />
+    <Content Include="Forms\Bank\BankAccountOpeningBalanceManagement.aspx" />
+    <Content Include="Forms\Bank\BankAccountUpdateStatusManagement.aspx" />
+    <Content Include="Forms\Bank\BankAdvanceManagement.aspx" />
+    <Content Include="Forms\Bank\BankManagement.aspx" />
+    <Content Include="Forms\Default.aspx" />
+    <Content Include="Forms\Account\Register.aspx" />
+    <Content Include="Forms\Others\Download\DownloadAttachment.aspx" />
+    <Content Include="Forms\Others\Download\DownloadSelectedAttachment.aspx" />
+    <Content Include="Forms\Others\MapLocator.aspx" />
+    <Content Include="Forms\Others\MapLocator_Test.aspx" />
+    <Content Include="Forms\Others\Test.aspx" />
+    <Content Include="Forms\Pages\Administrator\Administrator.aspx" />
+    <Content Include="Forms\Pages\Administrator\Bank.aspx" />
+    <Content Include="Forms\Pages\Administrator\bankServices.aspx" />
+    <Content Include="Forms\Pages\Administrator\UserManagement.aspx" />
+    <Content Include="Forms\Pages\PublicRelation.aspx" />
+    <Content Include="Forms\Pages\RealEstate\Building.aspx" />
+    <Content Include="Forms\Pages\RealEstate\RealEstate.aspx" />
+    <Content Include="Forms\PublicRelation\Client\ClientManagement.aspx" />
+    <Content Include="Forms\PublicRelation\Contact\ContactManagement.aspx" />
+    <Content Include="Forms\PublicRelation\Contact\ContactManagementAddWindow.aspx" />
+    <Content Include="Forms\PublicRelation\Owner\OwnerManagement.aspx" />
+    <Content Include="Forms\PublicRelation\Supplier\SupplierManagement.aspx" />
+    <Content Include="Forms\RealEstate\BuildingManagement\Add\BuildingAttachmentWindow.aspx" />
+    <Content Include="Forms\RealEstate\BuildingManagement\Add\BuildingManagement.aspx" />
+    <Content Include="Forms\RealEstate\BuildingManagement\Add\Flat\BuldingFlatAttachmentWindow.aspx" />
+    <Content Include="Forms\RealEstate\BuildingManagement\Update\BuildingUpdateAttachmentWindow.aspx" />
+    <Content Include="Forms\RealEstate\BuildingManagement\Update\BuildingList.aspx" />
+    <Content Include="Forms\RealEstate\BuildingManagement\Update\BuildingUpdateManagement.aspx" />
+    <Content Include="Forms\RealEstate\FlatManagement\FlatManagement.aspx" />
+    <Content Include="Forms\RealEstate\FlatManagement\FlatManagementAttachmentWindow.aspx" />
+    <Content Include="Forms\RealEstate\FlatManagement\FlatManagementWindow.aspx" />
+    <Content Include="Forms\RealEstate\FreeLandManagement\FreeLandManagement.aspx" />
+    <Content Include="Forms\RealEstate\FreeLandManagement\FreeLandManagementAttachmentWindow.aspx" />
+    <Content Include="Forms\RealEstate\FreeLandManagement\FreeLandManagementWindow.aspx" />
+    <Content Include="Forms\RealEstate\FreeLandManagement\imagedemo.aspx" />
+    <Content Include="Forms\RealEstate\VillaManagement\VillaManagement.aspx" />
+    <Content Include="Forms\RealEstate\VillaManagement\VillaManagementAttachmentWindow.aspx" />
+    <Content Include="Forms\RealEstate\VillaManagement\VillaManagementWindow.aspx" />
+    <Content Include="Forms\Report\ReportBank.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <Content Include="Content\css\font\Aaargh-webfont.woff" />
+    <Content Include="Content\css\font\Gidolinya-Regular.otf" />
+    <Content Include="Content\HomeMaster.Master" />
+    <Content Include="Content\LoginMaster.Master" />
+    <Content Include="App_Data\RadSpell\de-DE.tdf" />
+    <Content Include="App_Data\RadSpell\en-US.tdf" />
+    <Content Include="App_Data\RadSpell\fr-FR.tdf" />
+    <Content Include="Forms\Web.config" />
+    <Content Include="RealData.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>RealData.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\WindowMaster.Master" />
+    <Content Include="Attachments\Flat\1.pdf" />
+    <Content Include="Attachments\Freeland\9.pdf" />
+    <Content Include="Attachments\Treasurer\BankAccountTransaction\3.pdf" />
+    <Content Include="Attachments\Treasurer\BankAccountTransaction\4.pdf" />
+    <Content Include="Attachments\Treasurer\BankAccountTransaction\5.pdf" />
+    <Content Include="Attachments\Treasurer\BankAccountTransaction\6.pdf" />
+    <Content Include="Attachments\Treasurer\BankAccountTransaction\7.pdf" />
+    <Content Include="Attachments\Villa\1.pdf" />
+    <None Include="My Project\PublishProfiles\RealEstateManagementSystem.pubxml" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\_references.js" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\SGRoute.vb" />
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\AuthConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Content\customMessageBox\messageBox.ascx.designer.vb">
+      <DependentUpon>messageBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\customMessageBox\messageBox.ascx.vb">
+      <DependentUpon>messageBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\HomeMaster.Master.designer.vb">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Content\HomeMaster.Master.vb">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\LoginMaster.Master.designer.vb">
+      <DependentUpon>LoginMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Content\LoginMaster.Master.vb">
+      <DependentUpon>LoginMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WindowMaster.Master.designer.vb">
+      <DependentUpon>WindowMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WindowMaster.Master.vb">
+      <DependentUpon>WindowMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Account\ActivateFreezeUser.aspx.designer.vb">
+      <DependentUpon>ActivateFreezeUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account\ActivateFreezeUser.aspx.vb">
+      <DependentUpon>ActivateFreezeUser.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Account\ChangeUserName.aspx.designer.vb">
+      <DependentUpon>ChangeUserName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account\ChangeUserName.aspx.vb">
+      <DependentUpon>ChangeUserName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Account\ChangeUserSignature.aspx.designer.vb">
+      <DependentUpon>ChangeUserSignature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account\ChangeUserSignature.aspx.vb">
+      <DependentUpon>ChangeUserSignature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Account\ManageUser.aspx.designer.vb">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account\ManageUser.aspx.vb">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Account\ResetPassword.aspx.designer.vb">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account\ResetPassword.aspx.vb">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\BankServices\BankAccountTransaction.aspx.designer.vb">
+      <DependentUpon>BankAccountTransaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankServices\BankAccountTransaction.aspx.vb">
+      <DependentUpon>BankAccountTransaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\BankServices\TransferCashBetweenBankAccounts.aspx.designer.vb">
+      <DependentUpon>TransferCashBetweenBankAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BankServices\TransferCashBetweenBankAccounts.aspx.vb">
+      <DependentUpon>TransferCashBetweenBankAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAccountAdvanceManagement.aspx.designer.vb">
+      <DependentUpon>BankAccountAdvanceManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAccountAdvanceManagement.aspx.vb">
+      <DependentUpon>BankAccountAdvanceManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAccountManagement.aspx.designer.vb">
+      <DependentUpon>BankAccountManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAccountManagement.aspx.vb">
+      <DependentUpon>BankAccountManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAccountManagementWindow.aspx.designer.vb">
+      <DependentUpon>BankAccountManagementWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAccountManagementWindow.aspx.vb">
+      <DependentUpon>BankAccountManagementWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAccountOpeningBalanceManagement.aspx.designer.vb">
+      <DependentUpon>BankAccountOpeningBalanceManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAccountOpeningBalanceManagement.aspx.vb">
+      <DependentUpon>BankAccountOpeningBalanceManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAccountUpdateStatusManagement.aspx.designer.vb">
+      <DependentUpon>BankAccountUpdateStatusManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAccountUpdateStatusManagement.aspx.vb">
+      <DependentUpon>BankAccountUpdateStatusManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAdvanceManagement.aspx.designer.vb">
+      <DependentUpon>BankAdvanceManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bank\BankAdvanceManagement.aspx.vb">
+      <DependentUpon>BankAdvanceManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Bank\BankManagement.aspx.designer.vb">
+      <DependentUpon>BankManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bank\BankManagement.aspx.vb">
+      <DependentUpon>BankManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Others\Download\DownloadAttachment.aspx.designer.vb">
+      <DependentUpon>DownloadAttachment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Others\Download\DownloadAttachment.aspx.vb">
+      <DependentUpon>DownloadAttachment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Others\Download\DownloadSelectedAttachment.aspx.designer.vb">
+      <DependentUpon>DownloadSelectedAttachment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Others\Download\DownloadSelectedAttachment.aspx.vb">
+      <DependentUpon>DownloadSelectedAttachment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Others\MapLocator.aspx.designer.vb">
+      <DependentUpon>MapLocator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Others\MapLocator.aspx.vb">
+      <DependentUpon>MapLocator.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Others\MapLocator_Test.aspx.designer.vb">
+      <DependentUpon>MapLocator_Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Others\MapLocator_Test.aspx.vb">
+      <DependentUpon>MapLocator_Test.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Others\Test.aspx.designer.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Others\Test.aspx.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Pages\Administrator\Administrator.aspx.designer.vb">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pages\Administrator\Administrator.aspx.vb">
+      <DependentUpon>Administrator.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Pages\Administrator\Bank.aspx.designer.vb">
+      <DependentUpon>Bank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pages\Administrator\Bank.aspx.vb">
+      <DependentUpon>Bank.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Pages\Administrator\bankServices.aspx.designer.vb">
+      <DependentUpon>bankServices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pages\Administrator\bankServices.aspx.vb">
+      <DependentUpon>bankServices.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Pages\Administrator\UserManagement.aspx.designer.vb">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pages\Administrator\UserManagement.aspx.vb">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Pages\PublicRelation.aspx.designer.vb">
+      <DependentUpon>PublicRelation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pages\PublicRelation.aspx.vb">
+      <DependentUpon>PublicRelation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Pages\RealEstate\Building.aspx.designer.vb">
+      <DependentUpon>Building.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pages\RealEstate\Building.aspx.vb">
+      <DependentUpon>Building.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Pages\RealEstate\RealEstate.aspx.designer.vb">
+      <DependentUpon>RealEstate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pages\RealEstate\RealEstate.aspx.vb">
+      <DependentUpon>RealEstate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PublicRelation\Client\ClientManagement.aspx.designer.vb">
+      <DependentUpon>ClientManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PublicRelation\Client\ClientManagement.aspx.vb">
+      <DependentUpon>ClientManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PublicRelation\Contact\ContactManagement.aspx.designer.vb">
+      <DependentUpon>ContactManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PublicRelation\Contact\ContactManagement.aspx.vb">
+      <DependentUpon>ContactManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PublicRelation\Contact\ContactManagementAddWindow.aspx.designer.vb">
+      <DependentUpon>ContactManagementAddWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PublicRelation\Contact\ContactManagementAddWindow.aspx.vb">
+      <DependentUpon>ContactManagementAddWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PublicRelation\Owner\OwnerManagement.aspx.designer.vb">
+      <DependentUpon>OwnerManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PublicRelation\Owner\OwnerManagement.aspx.vb">
+      <DependentUpon>OwnerManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PublicRelation\Supplier\SupplierManagement.aspx.designer.vb">
+      <DependentUpon>SupplierManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PublicRelation\Supplier\SupplierManagement.aspx.vb">
+      <DependentUpon>SupplierManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Add\BuildingAttachmentWindow.aspx.designer.vb">
+      <DependentUpon>BuildingAttachmentWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Add\BuildingAttachmentWindow.aspx.vb">
+      <DependentUpon>BuildingAttachmentWindow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Add\BuildingManagement.aspx.designer.vb">
+      <DependentUpon>BuildingManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Add\BuildingManagement.aspx.vb">
+      <DependentUpon>BuildingManagement.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Add\Flat\BuldingFlatAttachmentWindow.aspx.designer.vb">
+      <DependentUpon>BuldingFlatAttachmentWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Add\Flat\BuldingFlatAttachmentWindow.aspx.vb">
+      <DependentUpon>BuldingFlatAttachmentWindow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Update\BuildingUpdateAttachmentWindow.aspx.designer.vb">
+      <DependentUpon>BuildingUpdateAttachmentWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Update\BuildingUpdateAttachmentWindow.aspx.vb">
+      <DependentUpon>BuildingUpdateAttachmentWindow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Update\BuildingList.aspx.designer.vb">
+      <DependentUpon>BuildingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Update\BuildingList.aspx.vb">
+      <DependentUpon>BuildingList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Update\BuildingUpdateManagement.aspx.designer.vb">
+      <DependentUpon>BuildingUpdateManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\BuildingManagement\Update\BuildingUpdateManagement.aspx.vb">
+      <DependentUpon>BuildingUpdateManagement.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FlatManagement\FlatManagement.aspx.designer.vb">
+      <DependentUpon>FlatManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FlatManagement\FlatManagement.aspx.vb">
+      <DependentUpon>FlatManagement.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FlatManagement\FlatManagementAttachmentWindow.aspx.designer.vb">
+      <DependentUpon>FlatManagementAttachmentWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FlatManagement\FlatManagementAttachmentWindow.aspx.vb">
+      <DependentUpon>FlatManagementAttachmentWindow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FlatManagement\FlatManagementWindow.aspx.designer.vb">
+      <DependentUpon>FlatManagementWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FlatManagement\FlatManagementWindow.aspx.vb">
+      <DependentUpon>FlatManagementWindow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FreeLandManagement\FreeLandManagement.aspx.designer.vb">
+      <DependentUpon>FreeLandManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FreeLandManagement\FreeLandManagement.aspx.vb">
+      <DependentUpon>FreeLandManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FreeLandManagement\FreeLandManagementAttachmentWindow.aspx.designer.vb">
+      <DependentUpon>FreeLandManagementAttachmentWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FreeLandManagement\FreeLandManagementAttachmentWindow.aspx.vb">
+      <DependentUpon>FreeLandManagementAttachmentWindow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FreeLandManagement\FreeLandManagementWindow.aspx.designer.vb">
+      <DependentUpon>FreeLandManagementWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FreeLandManagement\FreeLandManagementWindow.aspx.vb">
+      <DependentUpon>FreeLandManagementWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FreeLandManagement\imagedemo.aspx.designer.vb">
+      <DependentUpon>imagedemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\FreeLandManagement\imagedemo.aspx.vb">
+      <DependentUpon>imagedemo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\VillaManagement\VillaManagement.aspx.designer.vb">
+      <DependentUpon>VillaManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\VillaManagement\VillaManagement.aspx.vb">
+      <DependentUpon>VillaManagement.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\VillaManagement\VillaManagementAttachmentWindow.aspx.designer.vb">
+      <DependentUpon>VillaManagementAttachmentWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\VillaManagement\VillaManagementAttachmentWindow.aspx.vb">
+      <DependentUpon>VillaManagementAttachmentWindow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\RealEstate\VillaManagement\VillaManagementWindow.aspx.designer.vb">
+      <DependentUpon>VillaManagementWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealEstate\VillaManagement\VillaManagementWindow.aspx.vb">
+      <DependentUpon>VillaManagementWindow.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\ReportBank.aspx.designer.vb">
+      <DependentUpon>ReportBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\ReportBank.aspx.vb">
+      <DependentUpon>ReportBank.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\Test.Designer.vb">
+      <DependentUpon>Test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\Test.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RealData.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealData.dbml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="RealData.dbml.layout">
+      <DependentUpon>RealData.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Attachments\Building\Flat\5\" />
+    <Folder Include="Attachments\Client\" />
+    <Folder Include="Attachments\Treasurer\BankTransactionBetweenAccount\" />
+    <Folder Include="Content\themes\base\images\" />
+    <Folder Include="Content\themes\base\minified\images\" />
+    <Folder Include="Forms\BasicOperation\" />
+    <Folder Include="Forms\RealEstate\BuildingManagement\Add\Office\" />
+    <Folder Include="Forms\RealEstate\BuildingManagement\Add\Shop\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13840</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/REMS</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost/REMS</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,154 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(../font/Aaargh-webfont.woff);
+}
+
+.RadButton_Bootstrap .rbSkinnedButton,
+.RadButton_Bootstrap .rbDecorated,
+.RadButton_Bootstrap.rbVerticalButton,
+.RadButton_Bootstrap.rbVerticalButton .rbDecorated,
+.RadButton_Bootstrap .rbSplitRight,
+.RadButton_Bootstrap .rbSplitLeft {
+    background-image: none !important;
+}
+
+span.RadButton_Bootstrap{
+    /*color :inherit !important ;*/
+}
+
+.RadButton_Bootstrap .rbDecorated {
+    font-family: "Proxima Nova Regular" !important;
+    font-size: 18px !important;
+    /*color :white !important ;*/
+}
+
+    span.RadButton_Bootstrap .rbDecorated {
+    padding: 2px 1px 10px 1px !important ;
+    color: inherit !important;
+    }
+
+    .RadButton_Bootstrap .rbDecorated:hover {
+        transition: box-shadow .25s !important;
+        /*box-shadow: 0px 1px 1px 0px , 0px 1px 1px 0px !important;*/
+        outline: none !important;
+    }
+
+    .RadButton_Bootstrap .rbDecorated:focus {
+        outline: none !important;
+    }
+
+.RadButton_Bootstrap .rbToggleCheckbox {
+    background-image: url("Button/CheckBoxTick.png") !important;
+}
+
+.RadButton_Bootstrap .rbToggleCheckbox {
+    background-image: url("Button/CheckBox.png") !important;
+}
+
+.RadButton_Bootstrap .rbToggleCheckboxChecked {
+    background-image: url("Button/CheckBoxTick.png") !important;
+}
+
+.RadButton_Bootstrap.RadButton.rbLinkButton {
+    padding: 5px !important;
+    color: white !important;
+}
+
+.rbDecorated {
+    height: 40px !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+.rbToggleCheckbox {
+    padding-right: 10px !important;
+}
+
+.rbToggleCheckboxChecked {
+    padding-right: 10px !important;
+}
+
+.rbSkinnedButton {
+    /*height: 40px !important;*/
+    /*background-image: none !important;*/
+    padding: 0 !important;
+}
+
+.rbSkinnedButtonChecked .rbDecorated,
+.rbSkinnedButtonChecked:hover .rbDecorated {
+    background-repeat: no-repeat;
+    background-position: center !important;
+}
+
+.rbToggleCheckboxChecked, .rbToggleCheckbox {
+    background-position: center !important;
+}
+
+.rbPrimaryIcon, .rbSecondaryIcon {
+    position: absolute !important;
+    height: 25px !important;
+    width: 25px !important;
+    outline: none !important;
+    left: 0 !important;
+}
+
+.rbSkinnedButton:focus {
+    outline: 0px !important;
+}
+
+.rbToggleRadioChecked {
+    background-position: center !important;
+}
+
+.rbToggleRadio {
+    background-position: center !important;
+}
+
+.rbSkinnedButton .rbPrimaryIcon.rbToggleRadioChecked {
+    top: 0 !important;
+    height: 40px !important;
+}
+
+.rbSkinnedButton .rbPrimaryIcon.rbToggleRadio {
+    top: 0 !important;
+    height: 40px !important;
+}
+
+.RadButton_Bootstrap .rbToggleRadioChecked {
+    background-image: url(Button/CheckBoxTick.png) !important;
+}
+
+.RadButton_Bootstrap .rbToggleRadio {
+    background-image: url(Button/CheckBox.png) !important;
+}
+
+.rbSkinnedButtonChecked .rbDecorated {
+    background-position: center !important;
+    margin-left: 30px !important;
+    margin-right: 5px !important;
+}
+
+.sg-gender-radio-button .rbDecorated {
+    background-position: center !important;
+    margin-left: 30px !important;
+    margin-right: 5px !important;
+}
+
+    .sg-gender-radio-button .rbDecorated:hover {
+        transition: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+
+
+.rbText {
+    display: block !important;
+}
+
+span.RadButton_Bootstrap .rbPrimaryIcon {
+    left: 8px;
+    height: 20px !important;
+    width: 20px !important;
+    
+    margin-left: 10px;
+}

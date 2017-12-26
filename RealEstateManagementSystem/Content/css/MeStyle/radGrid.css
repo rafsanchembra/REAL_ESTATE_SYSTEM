@@ -1,0 +1,164 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(../font/Aaargh-webfont.woff);
+}
+
+.RadGrid .rgHeader, .RadGrid .rgPager {
+    cursor: default !important;
+    background-color: #0F3057 !important;
+    font-family: "Proxima Nova Regular" !important;
+    font-weight: bold !important;
+}
+
+.RadGrid .rgRow, .RadGrid .rgAltRow {
+    cursor: default !important;
+    background-color: #F5F5F5 !important;
+    height: 40px !important;
+}
+
+.RadGrid .rgResizeCol, .RadGrid .rgGroupPanel, .RadGrid .rgGroupHeader {
+    cursor: default !important;
+    background-color: whitesmoke !important;
+}
+
+.RadGrid .rgPager .RadInput {
+    margin: 0 5px !important;
+    display: inline-table !important;
+    width: 30px !important;
+}
+
+    .RadGrid .rgPager .RadInput .riTextBox {
+        padding: 0 !important;
+        font-size: 14px !important;
+        border-radius: 0 !important;
+        vertical-align: top !important;
+        min-height: 20px !important;
+    }
+
+.RadGrid input[type="image"] {
+    outline: none !important;
+}
+
+.RadGrid .rgFilterRow input {
+    padding: 0px !important;
+}
+
+.RadGrid td.rgPagerCell {
+    padding: 2px 0 2px 0 !important;
+}
+
+.RadGrid .rgFilterRow td {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.RadGrid .rgFilterBox {
+    height: 20px !important;
+    padding: 1px !important;
+}
+
+.rgFilterRow .riSingle .riTextBox {
+    height: 30px !important;
+}
+
+.RadGrid_Default {
+    border: none !important;
+    background: #d1d1d1 !important;
+}
+
+    .RadGrid_Default .rgHeader, .RadGrid_Default th.rgResizeCol {
+        background-image: none !important;
+    }
+
+    .RadGrid_Default .rgRow td, .RadGrid_Default .rgAltRow td, .RadGrid_Default .rgEditRow td, .RadGrid_Default .rgFooter td {
+        font-family: "Proxima Nova Regular" !important;
+        font-size: 16px;
+    }
+
+    .RadGrid_Default .rgRow td {
+        border-color: transparent !important;
+    }
+
+    .RadGrid_Default .rgAltRow {
+        background: #fff !important;
+    }
+
+        .RadGrid_Default .rgAltRow td {
+            border-color: transparent !important;
+        }
+
+    .RadGrid_Default .rgHeader, .RadGrid_Default .rgHeader a {
+        height: 25px;
+        color: white !important;
+        font-family: "Proxima Nova Regular" !important;
+        font-size: 14px !important;
+        font-weight: bold;
+    }
+
+    .RadGrid_Default .rgRow a, 
+    .RadGrid_Default .rgAltRow a, 
+    .RadGrid_Default .rgEditRow a {
+        color: #ff0000 !important;
+    }
+
+    .RadGrid_Default .rgEditForm {
+        border-bottom: none !important;
+    }
+
+.rgNoRecords {
+    font-family: "Proxima Nova Regular" !important;
+    font-size: 13px !important;
+    height: 30px !important;
+    color: #ac2222 !important;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+    .rgNoRecords td div {
+        margin-left: 10px !important;
+    }
+
+.Radgrid_Default_Gate_Row {
+    background-color: aliceblue !important;
+    font-family: "Proxima Nova Regular" !important;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 0px 0px 1px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    cursor: default !important;
+    height: 40px !important;
+}
+
+.RadGrid_Request_Manager_Column {
+    color: darkcyan;
+}
+
+.RadGrid_Request_Employee_Column {
+    color: darkslateblue;
+}
+
+.RadGrid_Active_Request_Column {
+    background-color: #eee !important;
+    height: 40px !important;
+    font-family: "Proxima Nova Regular" !important;
+    font-size: 16px;
+}
+
+
+
+
+
+/*RADGRID BOOTSTRAP*/
+
+.RadGrid_Bootstrap .rgPagerCell .rgNumPart a.rgCurrentPage {
+    background-color: #0F3057 !important ;
+    border: 1px solid #0F3057 !important ;
+    color: #fff;
+}
+
+.RadGrid_Bootstrap .rgHeader, .RadGrid_Bootstrap .rgHeader a {
+    color: white !important ;
+}

@@ -1,0 +1,13 @@
+﻿@font-face {
+    font-family: myfont;
+    src: url(../font/Aaargh-webfont.woff);
+}
+
+.RadAjax_MetroTouch .raDiv{
+	background-image: url('Ajax/loadingHorizontal.GIF') !important;
+}
+
+.RadAjax_MetroTouch .raColor {
+    background-color: rgb(224, 224, 224) !important;
+    color: #000;
+}
